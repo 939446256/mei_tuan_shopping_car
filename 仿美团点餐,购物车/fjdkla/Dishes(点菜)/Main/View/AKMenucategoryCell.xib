@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="AKMenucategoryCell" customModule="fjdkla" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="205" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="205" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHc-wY-aDb">
+                        <rect key="frame" x="5" y="10" width="195" height="73.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="praise.png" translatesAutoresizingMaskIntoConstraints="NO" id="QTb-v0-NfF">
+                        <rect key="frame" x="5" y="32" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="QTb-v0-NfF" secondAttribute="height" multiplier="1:1" id="NQ2-aJ-VHi"/>
+                            <constraint firstAttribute="height" constant="30" id="PUU-Wc-3Xg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="RHc-wY-aDb" secondAttribute="trailing" constant="5" id="6sa-xJ-n8c"/>
+                    <constraint firstAttribute="bottom" secondItem="RHc-wY-aDb" secondAttribute="bottom" constant="10" id="Daz-m8-IiD"/>
+                    <constraint firstItem="RHc-wY-aDb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VDM-jc-pe2"/>
+                    <constraint firstItem="QTb-v0-NfF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="VLf-3G-rvN"/>
+                    <constraint firstItem="QTb-v0-NfF" firstAttribute="centerY" secondItem="RHc-wY-aDb" secondAttribute="centerY" id="aaf-9p-bPz"/>
+                    <constraint firstItem="RHc-wY-aDb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="901" constant="5" id="lFL-vj-UOv"/>
+                    <constraint firstItem="RHc-wY-aDb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="901" constant="5" id="qCB-sB-tdR"/>
+                    <constraint firstItem="RHc-wY-aDb" firstAttribute="leading" secondItem="QTb-v0-NfF" secondAttribute="trailing" priority="900" constant="5" id="yy8-YV-wFb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="QTb-v0-NfF" id="TWQ-dw-tjz"/>
+                <outlet property="menuCategoryLabel" destination="RHc-wY-aDb" id="G17-OF-4pD"/>
+                <outlet property="menuCategoryLabelToIcon" destination="yy8-YV-wFb" id="hFa-pT-dMd"/>
+            </connections>
+            <point key="canvasLocation" x="-61.5" y="74"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="praise.png" width="48" height="48"/>
+    </resources>
+</document>

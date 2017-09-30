@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AKDishesViewController" customModule="DayLife" customModuleProvider="target">
+            <connections>
+                <outlet property="foodInfoTableView" destination="uHp-Dm-gd4" id="r1I-Wu-bQ3"/>
+                <outlet property="foodMenuCategoryTableView" destination="sfe-bI-ZUX" id="c3W-OY-KGd"/>
+                <outlet property="shoppingView" destination="Rde-wK-jTT" id="615-DV-qc0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sfe-bI-ZUX">
+                    <rect key="frame" x="0.0" y="0.0" width="85" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="Gyi-HC-eEk"/>
+                    </constraints>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uHp-Dm-gd4">
+                    <rect key="frame" x="85" y="0.0" width="290" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rde-wK-jTT">
+                    <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Fno-Ev-6Mi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rde-wK-jTT" firstAttribute="top" secondItem="sfe-bI-ZUX" secondAttribute="bottom" id="121-s7-EUO"/>
+                <constraint firstItem="uHp-Dm-gd4" firstAttribute="bottom" secondItem="sfe-bI-ZUX" secondAttribute="bottom" id="7Fi-lP-kh6"/>
+                <constraint firstAttribute="bottom" secondItem="Rde-wK-jTT" secondAttribute="bottom" id="PQo-0g-SwY"/>
+                <constraint firstAttribute="trailing" secondItem="Rde-wK-jTT" secondAttribute="trailing" id="Rc8-Zp-OYh"/>
+                <constraint firstItem="sfe-bI-ZUX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZpK-tG-iuW"/>
+                <constraint firstItem="uHp-Dm-gd4" firstAttribute="leading" secondItem="sfe-bI-ZUX" secondAttribute="trailing" id="Zww-Yz-uDW"/>
+                <constraint firstAttribute="trailing" secondItem="uHp-Dm-gd4" secondAttribute="trailing" id="iJv-5X-63u"/>
+                <constraint firstItem="sfe-bI-ZUX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qyS-n2-DMi"/>
+                <constraint firstItem="Rde-wK-jTT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r3Z-cF-UTJ"/>
+                <constraint firstItem="uHp-Dm-gd4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uKQ-ig-VIa"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
